@@ -5,7 +5,7 @@ public class ArrayService {
     public int[] modifyArray(int[] array) {
 
         if (isOneNotExist(array)) {
-            throw new IllegalArgumentException("Массив должен содержать хотя бы одну единицу!");
+            throw new RuntimeException("Массив должен содержать хотя бы одну единицу!");
         }
 
         int lastOneIndex = findLastOneIndex(array);

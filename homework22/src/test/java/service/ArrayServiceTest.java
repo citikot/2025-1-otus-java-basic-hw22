@@ -17,13 +17,13 @@ class ArrayServiceTest {
     @Test
     void testModifyArrayWhenArrayIsEmpty() {
         int[] array = new int[]{};
-        assertThrows(IllegalArgumentException.class, () -> arrayService.modifyArray(array));
+        assertThrows(RuntimeException.class, () -> arrayService.modifyArray(array));
     }
 
     @Test
     void testModifyArrayWhenArrayHasNoOne() {
         int[] array = new int[]{2, 2, 2, 2};
-        assertThrows(IllegalArgumentException.class, () -> arrayService.modifyArray(array));
+        assertThrows(RuntimeException.class, () -> arrayService.modifyArray(array));
     }
 
     @Test
